@@ -1,13 +1,16 @@
 variable "region" {
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
   description = "description"
+}
+variable "zones"{
+ default=["ap-south-1a","ap-south-1b"]
 }
 variable "no_of_instances" {
   default = 2
 }
 variable "ami_id" {
-  default = "ami-03a6a731beee8dd4d"
+  default = "ami-0567e0d2b4b2169ae"
 }
 variable "instance_type" {
   default = "t2.micro"
