@@ -16,10 +16,10 @@ resource "aws_instance" "nadeploymentServers" {
       private_key = file(var.private_key_name)
     }
     provisioner "remote-exec" {
-      script = "/files/docker_setup.sh"
+      script = "files/docker_setup.sh"
     }
 	provisioner "remote-exec" {
-      script = "/files/deployment.sh"
+      script = "files/deployment.sh"
     }
   
 }
