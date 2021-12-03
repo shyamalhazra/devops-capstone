@@ -15,9 +15,11 @@ resource "aws_instance" "nadeploymentServers" {
       user = "ubuntu"
       private_key = file(var.private_key_name)
     }
+    /*
     provisioner "remote-exec" {
       script = "files/docker_setup.sh"
     }
+    */	
 	provisioner "remote-exec" {
       script = "files/deployment.sh"
     }
