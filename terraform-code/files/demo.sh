@@ -1,1 +1,2 @@
 pwd
+cat ../README.md
