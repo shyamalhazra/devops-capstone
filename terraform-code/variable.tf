@@ -7,7 +7,7 @@ variable "zones"{
  default=["ap-south-1a","ap-south-1b"]
 }
 variable "no_of_instances" {
-  default = 2
+  default = 1
 }
 variable "ami_id" {
   default = "ami-0567e0d2b4b2169ae"
