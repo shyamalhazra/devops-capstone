@@ -1,3 +1,3 @@
 cd ..
-docker build -t petclinic:latest .
-docker-compose up -d
+docker build -t petclinic:latest -f "../Dockerfile" ../
+docker-compose -f "../docker-compose.yaml" up -d petclinic
