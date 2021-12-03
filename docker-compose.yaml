@@ -4,6 +4,6 @@ version: '2'
 
 services: 
   petclinic:
-    build: . 
+    image: petclinic:latest
     ports:
       - '30099:8080'
